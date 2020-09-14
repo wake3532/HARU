@@ -26,7 +26,7 @@ import youtube_dl
 import sys
 from selenium import webdriver
 import time
-import requests
+
 
 client = discord.Client()
 

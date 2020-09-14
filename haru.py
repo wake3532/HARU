@@ -4,7 +4,6 @@ import discord
 from discord.ext import commands
 from discord.utils import get
 import asyncio
-from captcha.image import ImageCaptcha
 import random
 import urllib
 from urllib.request import Request

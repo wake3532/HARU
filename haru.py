@@ -86,7 +86,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content == "하루야 도움말" or message.content == "하루야 명령어":
-        embed = discord.Embed(title="🔨ㅣSky BOT 도움말", timestamp=message.created_at,
+        embed = discord.Embed(title="🔨ㅣ하루 도움말", timestamp=message.created_at,
         colour=discord.Colour.gold()
     )
         embed.add_field(name="하루야 도움말 기본, 하루야 명령어 기본", value="봇의 기본 명령어들입니다.", inline=False)
@@ -98,13 +98,13 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content.startswith("하루야 가입"):
-        if message.author.id in owner:
-        embed = discord.Embed(title="정상적으로 가입 되었습니다 축하드려요 ❗ ", description="오늘부터 당신은 프리미엄입니다. 아이피 변경시 프리미엄이 취소됩니다 ! ")
+            if message.author.id in owner:
+        embed = discord.Embed(title="정상적으로 가입 되었습니다 축하드려요 :exclamation: ", description="오늘부터 당신은 프리미엄입니다. 아이피 변경시 프리미엄이 취소됩니다 ! ")
         colour=discord.Colour.green()   
     )
         await message.channel.send(embed=embed)
     else:
-        await message.channel.send('당신은 프리미엄 사용자가 아닙니다 ❗ 서포트 서버에서 구매해보세요 😀 [구매하기]](https://discord.gg/g5cEJzk)')
+        await message.channel.send('당신은 프리미엄 사용자가 아닙니다 :exclamation: 서포트 서버에서 구매해보세요 :grinning: [구매하기]](https://discord.gg/g5cEJzk)')
 
     if message.content.startswith("하루야 핑"):
         la = client.latency
@@ -230,7 +230,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content == "하루야 도움말 관리" or message.content == '하루야 명령어 관리':
-        embed = discord.Embed(title="🔨ㅣSKYBOT 관리 명령어", timestamp=message.created_at,
+        embed = discord.Embed(title="🔨ㅣ 관리 명령어", timestamp=message.created_at,
         colour = discord.Colour.dark_teal()    
     )
         embed.add_field(name="하루야 청소 [ 메시지 수 ]", value="[ 메시지 수 ] 에 해당하는 숫자 - 1 만큼의 메시지가 지워집니다! \n /청소 11 을 적으면 10개를 지우는것과 같습니다!", inline=False)
@@ -250,7 +250,7 @@ async def on_message(message):
 
 
     if message.content == '하루야 도움말 검색' or message.content == '하루야 명령어 검색':
-        embed = discord.Embed(title="🔎ㅣSKYBOT 검색 명령어", timestamp=message.created_at,
+        embed = discord.Embed(title="🔎ㅣ하루 검색 명령어", timestamp=message.created_at,
         colour = discord.Colour.teal()    
     )
         embed.add_field(name='하루야 날씨 [ 지역 ]', value="[ 지역 ] 의 정보를 출력합니다. \n 국내 지역만 지원합니다.", inline=False)

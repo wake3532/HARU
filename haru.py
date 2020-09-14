@@ -97,14 +97,6 @@ async def on_message(message):
         embed.set_footer(text="스카이봇 개발자는 ∑」Cookie**#3907, ∑」wave**#1234 이에요!")
         await message.channel.send(embed=embed)
         
-    if message.content.startswith("하루야 가입"):
-            if message.author.id in owner:
-        embed = discord.Embed(title="정상적으로 가입 되었습니다 축하드려요 :exclamation: ", description="오늘부터 당신은 프리미엄입니다. 아이피 변경시 프리미엄이 취소됩니다 ! ")
-        colour=discord.Colour.green()   
-    )
-        await message.channel.send(embed=embed)
-    else:
-        await message.channel.send('당신은 프리미엄 사용자가 아닙니다 :exclamation: 서포트 서버에서 구매해보세요 :grinning: [구매하기]](https://discord.gg/g5cEJzk)')
 
     if message.content.startswith("하루야 핑"):
         la = client.latency
